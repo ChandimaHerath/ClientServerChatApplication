@@ -10,7 +10,9 @@ public class ServerApp {
 
         ServerSocket serverSocket = new ServerSocket(7575);
 
-        Socket socket = serverSocket.accept();
+        while (true) {
+            Socket socket = serverSocket.accept();
+        }
 
 
 
