@@ -10,6 +10,16 @@ public class ServerApp {
 
         ServerSocket serverSocket = new ServerSocket(7575);
 
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            if(!serverSocket.isClosed()){
+                try {
+                    serverSocket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }));
+
         while (true) {
             Socket socket = serverSocket.accept();
         }
