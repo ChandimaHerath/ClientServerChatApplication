@@ -1,7 +1,9 @@
 package lk.Chandima.learn.chatapp;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -43,6 +45,31 @@ public class ServerApp {
 
         try (ServerSocket serverSocket = new ServerSocket(7575)) {
             System.out.println("Server Started....!");
+
+           while(true){
+
+               System.out.println("listing to incoming Clients....!");
+               Socket localSocket = serverSocket.accept();
+
+               new Thread(() -> {
+
+                   try (InputStream is = localSocket.getInputStream();
+                        InputStreamReader isr = new InputStreamReader(is);
+                        BufferedReader br = new BufferedReader(isr))
+                   {
+
+
+
+
+                   }
+
+                   catch (IOException e) {
+                       e.printStackTrace();
+                   }
+
+               }).start();
+
+           }
 
 
         } catch (IOException e) {
