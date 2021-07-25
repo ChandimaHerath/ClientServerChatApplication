@@ -13,7 +13,7 @@ public class ClientApp {
 
         Scanner scanner = new Scanner(System.in);
 
-        try (Socket clientSocket = new Socket("localhost", 7071)) {
+        try (Socket clientSocket = new Socket("localhost", 7070)) {
             System.out.println("Enter Your Name:");
             String name = scanner.nextLine();
 

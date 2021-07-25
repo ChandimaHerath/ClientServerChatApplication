@@ -11,7 +11,7 @@ public class ServerApp {
 
     public static void main(String[] args)  {
 
-        try (ServerSocket serverSocket = new ServerSocket(7071)) {
+        try (ServerSocket serverSocket = new ServerSocket(7070)) {
             System.out.println("Server Started....!");
 
            while(true){
