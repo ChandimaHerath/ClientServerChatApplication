@@ -19,7 +19,7 @@ This is a terminal based Chat application build for describing the client server
 
     06). Retrive your messages in ServerApp terminal
 
-*(You customize the IP address and the port for connecting far two distance devices)*
+*(You can customize the IP address and the port for connecting far two distance devices)*
 
 ---
 
