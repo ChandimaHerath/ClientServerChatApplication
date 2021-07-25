@@ -1,7 +1,7 @@
  # **Terminal Chat app using Client Server Architecture** 
  
  
-###This is a terminal based Chat application build for describing the client server architecture
+This is a terminal based Chat application build for describing the client server architecture
 
 
 
@@ -25,15 +25,18 @@
 
 
 ![img.png](src/images/img.png)
+
 (*Server app*)
 
 --------------------------------------------------------------------------------
         
 ![img_1.png](src/images/img_1.png)
+
 (*Client app sending messages*)
 
 --------------------------------------------------------------------------------
 ![img_2.png](src/images/img_2.png)
+
 (*Server app retriving messages*)
 
 --------------------------------------------------------------------------------
