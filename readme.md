@@ -1,4 +1,4 @@
- # **Terminal Chat app using Client Server Architecture** 
+ # **Terminal Chat App** 
  
  
 This is a terminal based Chat application build for describing the client server architecture
